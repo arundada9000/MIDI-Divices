@@ -15,6 +15,8 @@ indexes.forEach((ind) => {
     index = ind.value;
     container[index].style.display = "block";
     document.getElementById("page").textContent = index;
+    let bgpath = "./public/asset/bg" + index + ".jpeg";
+    document.body.style.backgroundImage = "url(" + bgpath + ")";
   });
 });
 
@@ -95,12 +97,16 @@ document.addEventListener("keydown", (event) => {
       index = 0;
       container[index].style.display = "block";
       document.getElementById("page").textContent = index;
+      let bgpath = "./public/asset/bg" + index + ".jpeg";
+      document.body.style.backgroundImage = "url(" + bgpath + ")";
       break;
     case "e":
       container[index].style.display = "none";
       index = 12;
       container[index].style.display = "block";
       document.getElementById("page").textContent = index;
+      bgpath = "./public/asset/bg" + index + ".jpeg";
+      document.body.style.backgroundImage = "url(" + bgpath + ")";
       break;
     default:
       break;
