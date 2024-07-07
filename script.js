@@ -14,6 +14,7 @@ indexes.forEach((ind) => {
     container[index].style.display = "none";
     index = ind.value;
     container[index].style.display = "block";
+    document.getElementById("page").textContent = index;
   });
 });
 
@@ -57,6 +58,7 @@ next_btn.addEventListener("click", () => {
     container[index - 1].style.display = "none";
     let bgpath = "./public/asset/bg" + index + ".jpeg";
     document.body.style.backgroundImage = "url(" + bgpath + ")";
+    document.getElementById("page").textContent = index;
   }
 });
 previous_btn.addEventListener("click", () => {
@@ -66,6 +68,7 @@ previous_btn.addEventListener("click", () => {
     container[index + 1].style.display = "none";
     let bgpath = "./public/asset/bg" + index + ".jpeg";
     document.body.style.backgroundImage = "url(" + bgpath + ")";
+    document.getElementById("page").textContent = index;
   }
 });
 
@@ -86,6 +89,18 @@ document.addEventListener("keydown", (event) => {
       break;
     case "h":
       showHideButton();
+      break;
+    case "0":
+      container[index].style.display = "none";
+      index = 0;
+      container[index].style.display = "block";
+      document.getElementById("page").textContent = index;
+      break;
+    case "e":
+      container[index].style.display = "none";
+      index = 12;
+      container[index].style.display = "block";
+      document.getElementById("page").textContent = index;
       break;
     default:
       break;

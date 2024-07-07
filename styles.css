@@ -6,6 +6,14 @@
   font-family: "Arya", sans-serif;
   line-height: 1.5rem;
 }
+#page {
+  position: fixed;
+  bottom: 0.25rem;
+  z-index: 1;
+  left: 50%;
+  color: yellow;
+  font-size: 2rem;
+}
 body {
   background-color: beige;
   font-family: "Open Sans", sans-serif;
@@ -15,7 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   caret-color: transparent;
-  background-image: url("public/asset/bg7.jpeg");
+  background-image: url("./public/asset/bg7.jpeg");
   background-size: cover;
 }
 a {
