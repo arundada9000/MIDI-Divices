@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container container1">
+        <h1>Arun Neupane</h1>
+        <p>
+        <ul class="flex">
+            <li value="1">Basic MIDI concepts</li>
+            <li value="4">MIDI devices</li>
+            <li value="5">MIDI message</li>
+            <li value="6">MIDI and smpte timing standards</li>
+            <li value="7"> MIDI software</li>
+        </ul>
+        </p>
+    </div>
+    <div class="container container5">
+        <h1> Basic MIDI Concept</h1>
+        <div class="flex">
+            <p>
+                The Musical Instrument Digital Interface protocol, better known as MIDI, has been around since the early
+                1980s and remains a crucial element in music production today. Anyone working with electronic music or
+                digital audio workstations (DAWs) like Logic Pro, Pro Tools, Ableton Live, etc., needs to know what MIDI
+                is
+                and how it works to produce music successfully.
+            </p>
+            <div class="images">
+                <img src="public/asset/midi.jpg" alt="MIDI">
+            </div>
+        </div>
+    </div>
+    <div class="container container3">
+        <h1>History</h1>
+        <p>
+            In the early 1980s, manufacturers of electronic music instruments realized there needed to be a standard
+            means of digital communication between different hardware devices and computers. MIDI technology was
+            standardized in 1983 by a panel of music industry representatives and is maintained by the MIDI
+            Manufacturers Association (MMA). This standard allows for efficient communication between devices regardless
+            of manufacturer. It also established uniform connectivity via five-pin MIDI cables. Later, standards for
+            communication via USB cables and wireless connections were added to the MIDI spec.
+        </p>
+    </div>
+    <div class="container">
+        <h1>Misconception</h1>
+        <p>
+            One of the common misconceptions for beginners is that MIDI communicates audio signals. It does not. It only
+            communicates data that instructs connected devices like synthesizers, sound modules and computers to
+            generate sound. It specifies pitches and provides a way to change other parameters.
+        </p>
+    </div>
+
+    <div class="container container6">
+        <h1> MIDI Devices</h1>
+        <p>
+            MIDI devices come in various forms, each serving different roles in music production, performance, and
+            control. Here are some common types of MIDI devices:
+        </p>
+        <p>
+        <h2>1.MIDI Controllers</h2>
+        <p>
+            MIDI controllers are devices that send MIDI data to control other MIDI-compatible devices or software. They
+            do
+            not produce sound on their own but are used to control sound-producing devices or software instruments.
+        </p>
+        <ul>
+            <li>
+                <p>
+                    <strong>1.Keyboard Controllers:</strong> <br> These resemble traditional keyboards and often come
+                    with
+                    additional controls
+                    like
+                    faders, knobs, and pads. Examples include the <b>Akai MPK</b> series and Novation Launchkey.
+                </p>
+                <div class="images">
+                    <img src="public/asset/akaimpk.webp" alt="Akai Mpk">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>2. Pad Controllers:</strong> <br> These feature a grid of pads that can be used to trigger
+                    drum
+                    sounds,
+                    samples, or
+                    loops. Examples include the <b>Akai MPC</b> series and Native Instruments Maschine.
+                </p>
+                <div class="images">
+                    <img src="public/asset/akaimpc.jpeg" alt="Akai Mpc">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>3. Control Surfaces:</strong> <br> Devices with knobs, faders, and buttons designed to
+                    control
+                    software
+                    DAWs and
+                    virtual
+                    instruments. Examples include the <b>Ableton Push</b> and Mackie Control Universal.
+                </p>
+                <div class="images">
+                    <img src="public/asset/ableto push.jpeg" alt="Ableton Push">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>4. Wind Controllers:</strong><br> Resemble wind instruments and allow wind players to
+                    control MIDI
+                    instruments. Examples include the Yamaha WX5 and Akai EWI series.
+                </p>
+                <div class="images">
+                    <img src="public/asset/akai ewi.jpeg" alt="Akai Ewi">
+                </div>
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div class="container container6">
+        <h1>MIDI Devices</h1>
+        <h2>2.MIDI Instruments</h2>
+        <p>
+            MIDI instruments generate sound based on MIDI input. They can be standalone hardware units or software
+            instruments within a DAW.
+        </p>
+        <p>
+        <ul>
+            <li>
+                <p>
+                    <strong>1. Synthesizers:</strong><br> Electronic instruments that generate audio signals, which can
+                    be
+                    shaped
+                    into different sounds. Examples include the <b>Roland Juno</b> series and Korg Minilogue.
+                </p>
+                <div class="images">
+                    <img src="public/asset/ronaldo juno.jpeg" alt="Ronaldo Juno">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>2. Drum Machines:</strong><br> Devices specifically designed to produce drum and percussion
+                    sounds.
+                    Examples include the <b>Roland TR-808</b> and Elektron Digitakt.
+                </p>
+                <div class="images">
+                    <img src="public/asset/roland tr 808.jpeg" alt="Roland TR 808">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>3. Sound Modules:</strong><br> Rack-mounted or desktop units that produce sound when
+                    triggered by
+                    MIDI input.Examples include the <b>Roland JV-1080</b> and Yamaha Motif Rack.
+                </p>
+                <div class="images">
+                    <img src="public/asset/roland jv 1080-2.jpeg" alt="Roland JV 1080">
+                </div>
+            </li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="container container6">
+        <h1>MIDI Devices</h1>
+        <h2>3. MIDI Interfaces</h2>
+        <p>
+            MIDI interfaces provide the necessary connections for MIDI devices to communicate with computers or other
+            MIDI
+            devices. They typically offer multiple MIDI input and output ports.
+        </p>
+        <p>
+        <ul>
+            <li>
+                <p>
+                    <strong>1. USB MIDI Interfaces:</strong><br> Connect to computers via USB and provide MIDI in/out
+                    ports.
+                    Examples include the <b>M-Audio MIDISport</b> and iConnectivity mio series.
+                </p>
+                <div class="images">
+                    <img src="public/asset/m-audio.jpeg" alt="M-Audio">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>2. Audio Interfaces with MIDI:</strong><br> Combine audio input/output capabilities with
+                    MIDI
+                    connectivity. Examples include the Focusrite Scarlett series and <b>PreSonus AudioBox</b>.
+                </p>
+                <div class="images">
+                    <img src="public/asset/audiobox.jpeg" alt="Audiobox">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>3. Standalone MIDI Interfaces:</strong><br> Provide extensive MIDI routing and connectivity
+                    options. Examples include the <b>MOTU MIDI</b> Express XT and ESI M8U eX.
+                </p>
+                <div class="images">
+                    <img src="public/asset/motu.webp" alt="Motu midi">
+                </div>
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div class="container container6">
+        <h1>MIDI Devices</h1>
+        <h2>4. MIDI Sequencers</h2>
+        <p>
+            MIDI sequencers are devices or software used to record, edit, and playback MIDI data.
+        </p>
+        <p>
+        <ul>
+            <li>
+                <p>
+                    <strong>1. Hardware Sequencers:</strong><br> Standalone devices for sequencing MIDI data. Examples
+                    include
+                    the Akai MPC series and <b>Elektron Octatrack</b>.
+                </p>
+                <div class="images">
+                    <img src="public/asset/elektron octatrack.jpeg" alt="Elektron Octatrack">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>2. Software Sequencers:</strong><br> DAWs and other software applications for sequencing and
+                    arranging MIDI data. Examples include <b>Ableton Live</b>, Logic Pro, and FL Studio.
+                </p>
+                <div class="images">
+                    <img src="public/asset/Ableton Live.jpeg" alt="Ableton Live">
+                </div>
+            </li>
+
+        </ul>
+        </p>
+    </div>
+    <div class="container container6">
+        <h1>MIDI Devices</h1>
+        <h2>5. MIDI Routers and Patch Bays</h2>
+        <p>MIDI routers and patch bays manage the routing and distribution of MIDI signals between multiple devices.</p>
+
+        <p>
+        <ul>
+            <li>
+                <p>
+                    <strong>1. MIDI Patch Bays:</strong><br> Allow multiple MIDI devices to be connected and routed as
+                    needed.
+                    Examples include the MOTU MIDI Timepiece and <b>Roland A-880</b>.
+                </p>
+                <div class="images">
+                    <img src="public/asset/Roland A-880.jpeg" alt="Roland A-880">
+                </div>
+            </li>
+            <li>
+                <p>
+                    <strong>2. MIDI Routers:</strong><br> Provide advanced routing capabilities, often with software
+                    control.
+                    Examples include the <b>Bome MIDI Translator Pro</b> and iConnectivity PlayAUDIO12.
+                </p>
+                <div class="images">
+                    <img src="public/asset/Bome MIDI Translator Pro.jpeg" alt="Bome MIDI Translator Pro">
+                </div>
+            </li>
+
+        </ul>
+        </p>
+    </div>
+    <div class="container">
+        <h1>MIDI Message</h1>
+        <p>
+            When you press a key on a MIDI keyboard connected to a computer via some sort of interface or directly via a
+            USB cable, three basic data values are transmitted:
+        <ul>
+            <li>Note Number <br>
+                ranging from 0 to 127 (which is the range of seven bit data), these numbers relate directly to the note
+                to be generated.
+            </li>
+            <li>Velocity
+                <br>
+                also ranges from 0 to 127 and can be related to volume — but it’s not the same thing. For example, when
+                you hit a piano key with a certain velocity it generates various overtone content related to the
+                intensity of the strike.
+            </li>
+            <li>Channel
+                <br>
+                typically ranging 1 through 16, Channel controls where information will be sent within a DAW or to
+                external instruments set to receive data on that Channel. This allows you to control specific devices or
+                virtual synths independently.
+            </li>
+        </ul>
+        </p>
+    </div>
+    <div class="container">
+        <h1>MIDI and SMPTE Timing Standards</h1>
+        <p>MIDI (Musical Instrument Digital Interface) and SMPTE (Society of Motion Picture and Television Engineers)
+            are both important timing standards used in different domains:</p>
+
+        <table>
+            <tr>
+                <th>S.N.</th>
+                <th>Basis</th>
+                <th>MIDI</th>
+                <th>SMPTE</th>
+            </tr>
+
+            <tr>
+                <td>1.</td>
+                <td>Purpose</td>
+                <td>
+                    MIDI is a technical standard that describes a protocol, digital interface, and connectors for
+                    connecting musical instruments, computers, and related audio devices.
+                </td>
+                <td>
+                    SMPTE timecode is a set of cooperating standards to label individual frames of video or film with a
+                    timecode defined by the SMPTE.
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Timing</td>
+                <td>
+                    MIDI timing is based on beats and tempo. It uses ticks (1/24 of a quarter note) to measure time,
+                    allowing precise synchronization of musical events between different MIDI devices.
+                </td>
+                <td>
+                    SMPTE timecode is typically used to synchronize audio and video in film, television, and audio
+                    production. It specifies hours, minutes, seconds, and frames within a given time period.
+                </td>
+            </tr>
+        </table>
+        <p>
+            While both standards deal with timing, they serve different purposes: MIDI for musical synchronization and
+            control, and SMPTE for audiovisual synchronization in film and television.
+        </p>
+    </div>
+
+    <div class="container software-container">
+        <h1>MIDI Software</h1>
+        <p>
+            There are various MIDI software applications available for different purposes, from music composition and
+            production to live performance and MIDI hardware control. Here are some popular MIDI software options:
+        </p>
+        <h3>1. Digital Audio Workstations (DAW)</h3>
+        <div class="softwares">
+            <div class="card">
+                <img src="public/asset/Ableton Live.jpeg" alt="">
+                <p><strong>Ableton Live</strong></p>
+                <p>Known for its versatility in live performance and electronic music production.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/logic pro.jpeg" alt="">
+                <p><strong>Logic Pro</strong></p>
+                <p>Apple's professional DAW with robust MIDI editing and recording features.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/fl studio.png" alt="">
+                <p><strong>FL Studio</strong></p>
+                <p>Popular for its intuitive interface and extensive MIDI capabilities.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/pro tools.png" alt="">
+                <p><strong>Pro Tools</strong></p>
+                <p>Industry-standard for audio recording, editing, and mixing, with comprehensive MIDI capabilities.</p>
+            </div>
+        </div>
+        <h3>2. MIDI Sequencers and Editors</h3>
+        <div class="softwares">
+            <div class="card">
+                <img src="public/asset/cubase.jpeg" alt="">
+                <p><strong>Cubase</strong></p>
+                <p>Offers advanced MIDI editing tools and comprehensive DAW functionality.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/reason.jpeg" alt="">
+                <p><strong>Reason</strong></p>
+                <p>Combines MIDI sequencing with virtual instruments and effects.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/studio one.jpeg" alt="">
+                <p><strong>Studio One</strong></p>
+                <p>Provides a streamlined workflow with powerful MIDI editing capabilities.</p>
+            </div>
+        </div>
+        <h3>3. Virtual Instruments and Plugins</h3>
+        <div class="softwares">
+            <div class="card">
+                <img src="public/asset/native instruments komplete.jpeg" alt="">
+                <p><strong>Native Instruments Komplete</strong></p>
+                <p>Includes a wide range of virtual instruments with MIDI control capabilities.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/arturia v collection.jpeg" alt="">
+                <p><strong>Arturia V Collection</strong></p>
+                <p>Offers classic synthesizers and keyboards with MIDI integration.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/serato sample.jpeg" alt="">
+                <p><strong>Serato Sample</strong></p>
+                <p> Specializes in sample-based MIDI control and manipulation.
+                </p>
+            </div>
+        </div>
+        <h3>4. MIDI Controllers and Hardware Integration</h3>
+        <div class="softwares">
+            <div class="card">
+                <img src="public/asset/midi-ox.jpeg" alt="">
+                <p><strong>MIDI-OX</strong></p>
+                <p>A utility to monitor, analyze, and manipulate MIDI data streams.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/max-msp.jpg" alt="">
+                <p><strong>Max/MSP</strong></p>
+                <p>Allows for custom MIDI programming and integration with hardware.</p>
+            </div>
+            <div class="card">
+                <img src="public/asset/pure data.jpg" alt="">
+                <p><strong>Pure Data (Pd)</strong></p>
+                <p>Similar to Max/MSP, providing a graphical programming environment for MIDI control.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Conclusion</h1>
+        <p style="background-color: green;">
+            MIDI (Musical Instrument Digital Interface) devices have revolutionized the way musicians create, perform,
+            and produce music. These devices, which include keyboards, controllers, drum machines, and more, facilitate
+            seamless communication between various musical instruments and digital audio workstations (DAWs). By
+            enabling precise control over musical elements such as pitch, velocity, and timing, MIDI devices offer
+            unparalleled flexibility and creative potential.
+        </p>
+    </div>
+
+    <div class="container last">
+
+    </div>
+
+    <button id="next">
+        <img src="public/asset/next_btn.png" alt="Next">
+    </button>
+    <button id="previous">
+        <img src="public/asset/previous_btn.png" alt="Previous">
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
